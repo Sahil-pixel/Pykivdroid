@@ -90,6 +90,8 @@ if platform == "android":
         ActivityManagerNMemoryInfo = autoclass('android.app.ActivityManager$MemoryInfo')
         
         #B
+        BuildNVERSION = autoclass('android.os.Build$VERSION')
+        BuildNVERSION_CODES = autoclass("android.os.Build$VERSION_CODES")
         #C
         CameraNCameraInfo=autoclass('android.hardware.Camera$CameraInfo')
         #D
@@ -116,8 +118,7 @@ if platform == "android":
         #T
         #U
         #V
-        BuildNVERSION = autoclass('android.os.Build$VERSION')
-        BuildNVERSION_CODES = autoclass("android.os.Build$VERSION_CODES")
+        
         #W
         WindowManagerNLayoutParams= autoclass('android.view.WindowManager$LayoutParams')
         #X
