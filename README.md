@@ -5,3 +5,11 @@ pykivdroid is a python module to control android
   kivy,android,pyjnius
   
 
+
+```
+     pykivdroid is python module to control android,
+     jnius and android module used 
+
+
+```
+   
