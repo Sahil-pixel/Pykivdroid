@@ -6,7 +6,8 @@ pykivdroid is a python module to control android
   
 
 ### Introduction
-  ```pykivdroid is python module to control android,
+  ```
+     pykivdroid is python module to control android,
      jnius and android module used 
 
   ```
