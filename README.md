@@ -10,6 +10,10 @@ pykivdroid is a python module to control android
      pykivdroid is python module to control Android.
      To test all this things you have to use android device.
       
+#### Installation
+```in buildozer.spec file 
+   requirements = python3,kivy==2.0.0,pyjnius,android,pykivdroid
+```
 
 ```
 #### Classes and mActivity
