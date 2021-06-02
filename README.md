@@ -12,11 +12,12 @@ pykivdroid is a python module to control android
 ```
       
 #### Installation
-```in buildozer.spec file 
+```
+  In buildozer.spec file 
    requirements = python3,kivy==2.0.0,pyjnius,android,pykivdroid
 ```
 
-```
+
 #### Classes and mActivity
 ```python
 # I have defined java android class 
