@@ -9,6 +9,7 @@ pykivdroid is a python module to control android
 ```
      pykivdroid is python module to control Android.
      To test all this things you have to use android device.
+```
       
 #### Installation
 ```in buildozer.spec file 
