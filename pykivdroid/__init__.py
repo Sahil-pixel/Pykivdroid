@@ -6,6 +6,8 @@ if platform == "android":
         #from kivy.core.window import Window
         from jnius import autoclass, cast, JavaException,PythonJavaClass,java_method
         from android.runnable import run_on_ui_thread
+        from android.permissions import request_permissions, Permission
+        from android import activity
         #A
         AndroidActivity = autoclass('android.app.Activity')
         ActivityInfo = autoclass('android.content.pm.ActivityInfo')
@@ -34,14 +36,21 @@ if platform == "android":
         Environment = autoclass("android.os.Environment")
         #F
         File = autoclass('java.io.File')
+        #G
+        Gravity=autoclass('android.view.Gravity')
         #I
         Intent = autoclass('android.content.Intent')
         IntentFilter = autoclass("android.content.IntentFilter")
+        #J
+        #K
+        KeyEvent = autoclass('android.view.KeyEvent')
 
         #L
         Locale = autoclass('java.util.Locale')
+        LinearLayout = autoclass('android.widget.LinearLayout')
         
         #M
+        MediaController=autoclass('android.widget.MediaController')
         MediaPlayer = autoclass('android.media.MediaPlayer')
         MediaRecorder = autoclass('android.media.MediaRecorder')
         
@@ -50,6 +59,7 @@ if platform == "android":
         
         #P
         PythonActivity = autoclass('org.kivy.android.PythonActivity')
+        PackageManager = autoclass('android.content.pm.PackageManager')
         Point = autoclass("android.graphics.Point")
 
         #R
@@ -65,6 +75,7 @@ if platform == "android":
         String = autoclass("java.lang.String")
         StrictMode = autoclass('android.os.StrictMode')
         StatFs = autoclass("android.os.StatFs")
+        SurfaceTexture = autoclass("android.graphics.SurfaceTexture")
         
         #T
         TextToSpeech = autoclass('android.speech.tts.TextToSpeech')
@@ -76,9 +87,13 @@ if platform == "android":
         
         
         View = autoclass('android.view.View')
+        ViewGroup = autoclass('android.view.ViewGroup')
+        VideoView=autoclass('android.widget.VideoView')
         #W
         
         WallpaperManager = autoclass('android.app.WallpaperManager')
+        WebView = autoclass('android.webkit.WebView')
+        WebViewClient = autoclass('android.webkit.WebViewClient')
         Window=autoclass('android.view.Window')
         
 
@@ -94,6 +109,7 @@ if platform == "android":
         BuildNVERSION_CODES = autoclass("android.os.Build$VERSION_CODES")
         #C
         CameraNCameraInfo=autoclass('android.hardware.Camera$CameraInfo')
+        CameraNParameters = autoclass("android.hardware.Camera$Parameters")
         #D
         DownloadNManagerRequest = autoclass("android.app.DownloadManager$Request")
         #E
@@ -118,6 +134,7 @@ if platform == "android":
         #T
         #U
         #V
+        ViewGroupNLayoutParams = autoclass('android.view.ViewGroup$LayoutParams')
         
         #W
         WindowManagerNLayoutParams= autoclass('android.view.WindowManager$LayoutParams')
