@@ -293,17 +293,22 @@ MyApp().run()
 ```
 
 #### Unity Ads
-##### Unity Interstitial and Reward ads 
-```python
-'''
+```
 1)Download Unity-ads.aar from unity ads 
-
-2)Add Unity-ads.aar to your /libs folder
+2)Creat libs folder in your project folder 
+3)Add Unity-ads.aar to your /libs folder
 
 update buildozer.spec 
 
 android.add_aars = ./libs/*.aar
 android permissions = INTERNET,ACCESS_NETWORK_STATE
+```
+[Unity-ads.aar download page ](https://github.com/Unity-Technologies/unity-ads-android/releases)
+
+##### Unity Interstitial and Reward ads 
+```python
+'''
+
 '''
 from kivy.app import App
 from kivy.uix.button import Button 
