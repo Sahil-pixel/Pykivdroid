@@ -9,8 +9,23 @@ pykivdroid is a python module to control android
 ```
      pykivdroid is python module to control Android.
      To test all this things you have to use android device.
+```
       
+#### Installation
+```
+  In buildozer.spec file 
+   requirements = python3,kivy==2.0.0,pyjnius,android,pykivdroid
+```
 
+
+#### Classes and mActivity
+```python
+# I have defined java android class 
+# Camera = autoclass('android.hardware.Camera')
+# And Nested class. N use to indicate nested 
+# CameraNCameraInfo=autoclass('android.hardware.Camera$CameraInfo')
+# mActivity is App's activity
+from pykivdroid import mActivity,Camera,CameraNCameraInfo
 ```
 #### Classes and mActivity
 ```python
@@ -184,7 +199,11 @@ class MyApp(App):
 MyApp().run()
 
 ```
+
+
+
 ### Text To Speech
+
 ```python
 #permission INTERNET
 from pykivdroid.tts import TTS
@@ -274,7 +293,7 @@ MyApp().run()
 ```
 
 ### Unity Ads
-#### Unity Interstitial and Reward ads 
+## Unity Interstitial and Reward ads 
 ```python
 '''
 1)Download Unity-ads.aar from unity ads 
@@ -352,3 +371,4 @@ class MyApp(App):
 MyApp().run()
 
 ```
+
